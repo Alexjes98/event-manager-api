@@ -12,7 +12,7 @@ import { MovementTypeModule } from './movement_type/movement_type.module';
       port: 3306,
       username: 'root',
       password: '1234',
-      database: 'event-manager',
+      database: 'event-manager-test',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: false,
     }),
