@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { MovementTypeModule } from './movement_type/movement_type.module';
+import { MovementModule } from './movement/movements.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -17,6 +18,7 @@ import { MovementTypeModule } from './movement_type/movement_type.module';
       synchronize: false,
     }),
     MovementTypeModule,
+    MovementModule,
   ],
   controllers: [AppController],
   providers: [AppService],
