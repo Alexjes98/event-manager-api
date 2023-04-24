@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
-import { Movements } from './movements.entity';
+import { Movements } from './entities/movements.entity';
 import { MovementController } from './movements.controller';
 import { MovementService } from './movements.service';
 @Module({

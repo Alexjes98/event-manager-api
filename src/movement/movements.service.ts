@@ -2,7 +2,7 @@ import { BadRequestException, Injectable, InternalServerErrorException, Logger }
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, Between, } from 'typeorm';
 
-import { Movements } from './movements.entity';
+import { Movements } from './entities/movements.entity';
 
 @Injectable()
 export class MovementService {
